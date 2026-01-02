@@ -1,0 +1,77 @@
+<!-- Configure git -->
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+
+You can verify the configuration:
+git config --list
+
+
+<!-- How to see hidden folder -->
+In Windows 11: Click the View dropdown (three dots) in the toolbar, then select Show > Hidden items.
+
+
+git status
+<!-- What changes are staged , not staged, untracked-->
+
+
+<!--Add file to staging area  -->
+git add .
+
+<!--Commit file -->
+git commit -m "message"
+
+git diff 
+q for exit
+<!-- What has been changed line by line in your report. -->
+<!-- it will show which parts of the report have been edited but are not yet staged for commit. -->
+
+
+<!-- Remove file from staging area -->
+git reset <file>
+
+
+<!-- Revert the changes -->
+git reset --hard <hashCode>
+git revert <hashcode>
+<!-- git add . -->
+<!-- git commit -m "next" -->
+
+
+<!-- How to create a branch -->
+git checkout -b <branch-name>
+
+
+<!-- Delete a branch -->
+git branch -d branch-name
+git branch -D branch-name (unmerged also)
+
+<!-- ESC :wq --> helpful(Escape the writing mode, save and quit)
+<!-- i: insert mode -->
+
+
+<!-- How to change the name of branch -->
+git branch -m <branch_name>
+
+<!-- Git stash -->
+allows you to temporarily save your uncommitted changes (both staged and unstaged) in a "stash" and revert your working directory back to the last commit.
+
+<!-- git stash -->
+<!-- git stash list -->
+<!-- git stash apply -->
+<!-- git stash apply stash@{1} -->
+<!-- git stash pop -->
+<!-- git stash clear -->
+
+
+<!-- Working with Github -->
+<!-- git remote add origin <repo link>
+git branch -M main
+git push -u origin main -->
+
+<!-- git pull origin main -->
+<!-- git pull --rebase origin main-->
+
+<!-- git branch -r -->
+
+<!-- git push origin --delete feature -->
